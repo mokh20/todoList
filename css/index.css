@@ -1,0 +1,125 @@
+:root {
+    --purple: #6d28d9;
+    --whitey: #ffffff;
+    --black: #0e0d0d;
+    --slow-gray: #d6d6d6;
+    --red-alarm: rgb(221, 29, 29);
+    --green-checked: #078807;
+    --slow-blue: #ede9fe;
+}
+
+body {
+    height: 90vh;
+    background-color: var(--slow-gray);
+    list-style-type: none;
+    outline: none;
+}
+
+.main {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+.main h2 {
+    color: var(--purple);
+    font: 1.5rem iransans-medium;
+}
+
+.todo-box {
+    display: grid;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    display: flex;
+}
+
+.todo-add {
+    border: none;
+    color: var(--purple);
+    font: 1.5rem iransans-light;
+    display: flex;
+    cursor: pointer;
+}
+
+form input,
+.todo-add {
+    padding: 0.7rem 0.5rem;
+    background-color: var(--whitey);
+}
+
+form input {
+    border: none;
+    width: 20rem;
+    outline: none;
+}
+
+.todo {
+    padding: 0.5rem 0;
+    width: 23.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--purple);
+    background-color: var(--slow-blue);
+    margin: 0.5rem 0;
+}
+
+.todo li {
+    padding-left: 0.5rem;
+    flex: 1;
+    font: 1rem iransans-medium;
+}
+
+.todo span {
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.check-task {
+    color: var(--green-checked);
+}
+
+.delete-task {
+    color: var(--red-alarm);
+}
+
+.checked-todo {
+    opacity: 0.5;
+    transition: all 0.5s ease-in;
+}
+
+.text-todo {
+    text-decoration: line-through;
+}
+
+.select {
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    color: var(--purple);
+}
+
+select,
+select option {
+    font: .8rem iransans-medium;
+    padding: .8rem 1.5rem;
+    outline: none;
+    border: none;
+    color: var(--purple);
+    appearance: none;
+    background-color: white;
+}
