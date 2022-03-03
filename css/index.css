@@ -91,6 +91,11 @@ form input {
     color: var(--red-alarm);
 }
 
+.delete-task,
+.check-task {
+    cursor: pointer;
+}
+
 .checked-todo {
     opacity: 0.5;
     transition: all 0.5s ease-in;
@@ -116,10 +121,11 @@ form input {
 select,
 select option {
     font: .8rem iransans-medium;
-    padding: .8rem 1.5rem;
+    padding: 1rem 1.5rem;
     outline: none;
     border: none;
     color: var(--purple);
     appearance: none;
     background-color: white;
+    cursor: pointer;
 }
